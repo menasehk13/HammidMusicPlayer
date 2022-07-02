@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_background.xml" value="0.1455" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_layout_album.xml" value="0.24270833333333333" />
