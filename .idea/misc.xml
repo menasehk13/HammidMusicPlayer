@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/drawable/ic_baseline_repeat_24.xml" value="0.1865" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.1865" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/drawable/ic_baseline_skip_previous_24.xml" value="0.1865" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/drawable/mini_layout.xml" value="0.1865" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/custom_layout_album.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/custom_song_list.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/layout_small_music_player.xml" value="0.33" />
+        <entry key="..\:/Users/Tibarek/AndroidStudioProjects/HammidMusicPlayer/app/src/main/res/layout/muisc_player_layout.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/search_background.xml" value="0.1455" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_layout_album.xml" value="0.24270833333333333" />
