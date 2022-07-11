@@ -10,6 +10,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     android:layout_width="match_parent"
+    android:id="@+id/linearLayout_click"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
     <androidx.cardview.widget.CardView

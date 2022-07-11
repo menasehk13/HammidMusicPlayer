@@ -61,20 +61,15 @@ class MainActivity : AppCompatActivity() {
                    val albumUri = ContentUris.withAppendedId(image_URI,currentSongAlbumId)
                    val musicData= SongModel(currentSongId,currentSongTitle,currentSongArtist,currentSongAlbum,currentSongData,currentSongDate,albumUri)
                   listmusic.add(musicData)
-                  homeAlbumAdapter.setData(listmusic)
                    homeSongsAdapter.getData(listmusic)
                }
            }
        }
 
     private fun initview() {
-    homeAlbumAdapter=HomeAlbumAdapter(this, emptyList())
-    homeSongsAdapter= HomeSongsAdapter(this, emptyList())
+    homeSongsAdapter= HomeSongsAdapter(this, listmusic)
     binding.recycleviewSong.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
-    binding.recycleView.layoutManager=LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
-    binding.recycleView.adapter=homeAlbumAdapter
     binding.recycleviewSong.adapter=homeSongsAdapter
-    binding.recycleView.hasFixedSize()
     binding.recycleviewSong.hasFixedSize()
     }
     companion object{

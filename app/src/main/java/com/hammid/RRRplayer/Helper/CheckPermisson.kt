@@ -9,8 +9,8 @@ import androidx.core.content.ContextCompat
 class CheckPermisson(val context:Context,val actvity:Activity) {
 
     fun checkPer(){
-        if(ContextCompat.checkSelfPermission(context,Manifest.permission.READ_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
-            actvity.requestPermissions(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),50)
+        if(ContextCompat.checkSelfPermission(context,Manifest.permission.READ_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(context,Manifest.permission.WRITE_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED) {
+            actvity.requestPermissions(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE),50)
         }else{
             return
         }
