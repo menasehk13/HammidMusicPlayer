@@ -28,7 +28,10 @@ class HomeSongsAdapter(val context: Context,var list: ArrayList<SongModel>):
      fun getData(listitem:ArrayList<SongModel>){
          this.list=listitem
      }
-
+fun filtedList(listfilt :ArrayList<SongModel>){
+    this.list= listfilt
+    notifyDataSetChanged()
+}
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.custom_song_list,parent,false)
       return  viewHolder(view)

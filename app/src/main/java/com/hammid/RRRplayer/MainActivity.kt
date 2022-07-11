@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import androidx.annotation.RequiresApi
+import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,10 +33,34 @@ class MainActivity : AppCompatActivity() {
         CheckPermisson(this,this)
             .checkPer()
         homeAlbumViewModel=ViewModelProvider(this).get(HomeAlbumViewModel::class.java)
+        binding.searcMusic.setOnQueryTextListener(object :SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filterSong(newText)
+                return false
+            }
+
+        })
         initview()
         getMusic()
     }
-       @RequiresApi(Build.VERSION_CODES.O)
+
+    private fun filterSong(newText: String?) {
+        val filteredList = ArrayList<SongModel>()
+        for (items in listmusic){
+            if (items.song_name!!.lowercase().contains(newText!!.lowercase())){
+                filteredList.add(items)
+            }else{
+                homeSongsAdapter.filtedList(filteredList)
+            }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
        fun getMusic(){
            val contentProvider = this.contentResolver
            val songUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI

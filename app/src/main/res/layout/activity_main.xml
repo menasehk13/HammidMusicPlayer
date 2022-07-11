@@ -26,6 +26,7 @@
             android:background="@drawable/search_background"
             android:layout_marginHorizontal="30dp"
             android:elevation="12dp"
+            app:iconifiedByDefault="false"
             app:queryHint="Search Music"
             android:id="@+id/searc_music"
             app:layout_constraintStart_toStartOf="parent"
