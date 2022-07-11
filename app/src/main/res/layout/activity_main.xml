@@ -52,15 +52,6 @@
                 android:textStyle="bold"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:gravity="center_vertical"
-                android:text="See all"
-                app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
         </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -71,8 +62,5 @@
             android:id="@+id/recycleview_song"
             app:layout_constraintTop_toBottomOf="@id/relative1"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <include
-        android:id="@+id/bottomsheet"
-        layout="@layout/layout_small_music_player"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
